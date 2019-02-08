@@ -24,6 +24,7 @@
             <?php if ($user->isAuthenticated()) { ?>
                 <li><a href="/admin/">Admin</a></li>
                 <li><a href="/admin/billet-insert.html">Ajouter un billet</a></li>
+                <li><a href="/admin/disconnect.html">Déconnexion</a></li>
             <?php } ?>
         </ul>
     </nav>

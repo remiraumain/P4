@@ -26,4 +26,15 @@ class ConnexionController extends BackController
             }
         }
     }
+
+    public function executeDisconnect(HTTPRequest $request)
+    {
+        session_start();
+
+        // Suppression des variables de session et de la session
+        $_SESSION = array();
+        session_destroy();
+
+        $this->app->httpResponse()->redirect('/');
+    }
 }
