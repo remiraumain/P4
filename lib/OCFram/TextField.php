@@ -27,6 +27,11 @@ class TextField extends Field
             $widget .= ' rows="'.$this->rows.'"';
         }
 
+        if (!empty($this->id))
+        {
+            $widget .= ' id="'.$this->id.'"';
+        }
+
         $widget .= '>';
 
         if (!empty($this->value))
@@ -55,5 +60,12 @@ class TextField extends Field
         {
             $this->rows = $rows;
         }
+    }
+
+    public function setId($id)
+    {
+        $id = htmlspecialchars($id);
+
+        $this->id = $id;
     }
 }

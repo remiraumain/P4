@@ -33,4 +33,3 @@ foreach ($comments as $comment)
 }
 ?>
 
-<p><a href="commenter-<?= $billet['id'] ?>.html">Ajouter un commentaire</a></p>

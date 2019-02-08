@@ -30,7 +30,7 @@ class BilletManagerPDO extends BilletManager
 
     public function delete($id)
     {
-        $this->dao->exec('DELETE FROM P4 - billets WHERE id = '.(int) $id);
+        $this->dao->exec('DELETE FROM `P4 - billets` WHERE id = '.(int) $id);
     }
 
     public function getList($debut = -1, $limite = -1)

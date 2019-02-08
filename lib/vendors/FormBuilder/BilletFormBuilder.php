@@ -34,6 +34,7 @@ class BilletFormBuilder extends FormBuilder
                 'name' => 'contenu',
                 'rows' => 8,
                 'cols' => 60,
+                'id' => 'mytextarea',
                 'validators' => [
                     new NotNullValidator('Merci de spécifier le contenu du billet'),
                 ],
