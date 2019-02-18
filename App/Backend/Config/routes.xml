@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <routes>
-    <route url="/admin/" module="Billet" action="index" />
+    <route url="/admin/" module="Admin" action="index" />
     <route url="/admin/billet-insert\.html" module="Billet" action="insert" />
     <route url="/admin/billet-update-([0-9]+)\.html" module="Billet" action="update" vars="id" />
     <route url="/admin/billet-delete-([0-9]+)\.html" module="Billet" action="delete" vars="id" />

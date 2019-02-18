@@ -11,16 +11,16 @@ class BilletController extends BackController
 {
     public function executeIndex(HTTPRequest $request)
     {
-        $nombreBillet = $this->app->config()->get('nombre_billet');
+        $nombreBillets = $this->app->config()->get('nombre_billet');
         $nombreCaracteres = $this->app->config()->get('nombre_caracteres');
 
         // On ajoute une définition pour le titre.
-        $this->page->addVar('title', 'Liste des '.$nombreBillet.' derniers billets');
+        $this->page->addVar('title', 'Liste des '.$nombreBillets.' derniers billets');
 
         // On récupère le manager des billets.
         $manager = $this->managers->getManagerOf('Billet');
 
-        $listeBillets = $manager->getList(0, $nombreBillet);
+        $listeBillets = $manager->getList(0, $nombreBillets);
 
         foreach ($listeBillets as $billet)
         {
@@ -46,6 +46,8 @@ class BilletController extends BackController
             $this->app->httpResponse()->redirect404();
         }
 
+        $nombreBillets = $this->app->config()->get('nombre_billet');
+        $this->page->addVar('listeBillets', $this->managers->getManagerOf('Billet')->getList(0, $nombreBillets));
         $this->page->addVar('title', $billet->titre());
         $this->page->addVar('billet', $billet);
         $this->page->addVar('comments', $this->managers->getManagerOf('Comments')->getListOf($billet->id()));
@@ -81,8 +83,68 @@ class BilletController extends BackController
             $this->app->httpResponse()->redirect('billet-'.$request->getData('billet').'.html');
         }
 
+        $nombreBillets = $this->app->config()->get('nombre_billet');
+        $this->page->addVar('listeBillets', $this->managers->getManagerOf('Billet')->getList(0, $nombreBillets));
+
         $this->page->addVar('comment', $comment);
         $this->page->addVar('form', $form->createView());
         $this->page->addVar('title', 'Ajout d\'un commentaire');
+    }
+
+    public function executeReportComment(HTTPRequest $request)
+    {
+        $comment = $this->managers->getManagerOf('Comments')->get($request->getData('id'));
+
+        $comment->setSignaler(true);
+
+        $this->managers->getManagerOf('Comments')->report($comment);
+
+        $this->app->user()->setFlash('Le commentaire a bien été signalé !');
+
+        $this->app->httpResponse()->redirect('/billet-'.$comment->billet().'.html');
+    }
+
+    public function executeShowAll(HTTPRequest $request)
+    {
+        $listeNombreBillets = [];
+
+        $nombreBillets = $this->app->config()->get('nombre_billet');
+        array_push($listeNombreBillets, $nombreBillets);
+
+        $nombreCaracteres = $this->app->config()->get('nombre_caracteres');
+
+        // On ajoute une définition pour le titre.
+        $this->page->addVar('title', 'Liste de tous les billets');
+
+        // On récupère le manager des billets.
+        $manager = $this->managers->getManagerOf('Billet');
+
+        $nombreBillets = $manager->count();
+        array_push($listeNombreBillets, $nombreBillets);
+
+        $listesBillets = [];
+
+        foreach ($listeNombreBillets as $nombreBillets)
+        {
+
+            $listeBillets = $manager->getList(0, $nombreBillets);
+
+            foreach ($listeBillets as $billet)
+            {
+                if (strlen($billet->contenu()) > $nombreCaracteres)
+                {
+                    $debut = substr($billet->contenu(), 0, $nombreCaracteres);
+                    $debut = substr($debut, 0, strrpos($debut, ' ')) . '...';
+
+                    $billet->setContenu($debut);
+                }
+            }
+            array_push($listesBillets, $listeBillets);
+        }
+
+
+        // On ajoute la variable $listeBillets à la vue.
+        $this->page->addVar('listeBillets', $listesBillets[0]);
+        $this->page->addVar('allBillets', $listesBillets[1]);
     }
 }

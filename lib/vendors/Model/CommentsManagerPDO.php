@@ -42,7 +42,7 @@ class CommentsManagerPDO extends CommentsManager
             throw new \InvalidArgumentException('L\'identifiant du billet passé doit être un nombre entier valide');
         }
 
-        $q = $this->dao->prepare('SELECT id, billet, auteur, contenu, date FROM `P4 - comments` WHERE billet = :billet');
+        $q = $this->dao->prepare('SELECT id, billet, auteur, contenu, date, signaler FROM `P4 - comments` WHERE billet = :billet');
         $q->bindValue(':billet', $billet, \PDO::PARAM_INT);
         $q->execute();
 
@@ -71,12 +71,50 @@ class CommentsManagerPDO extends CommentsManager
 
     public function get($id)
     {
-        $q = $this->dao->prepare('SELECT id, billet, auteur, contenu FROM `P4 - comments` WHERE id = :id');
+        $q = $this->dao->prepare('SELECT id, billet, auteur, contenu, signaler FROM `P4 - comments` WHERE id = :id');
         $q->bindValue(':id', (int) $id, \PDO::PARAM_INT);
         $q->execute();
 
         $q->setFetchMode(\PDO::FETCH_CLASS | \PDO::FETCH_PROPS_LATE, '\Entity\Comment');
 
         return $q->fetch();
+    }
+
+    public function report(Comment $comment)
+    {
+        $q = $this->dao->prepare('UPDATE `P4 - comments` SET signaler = :signaler WHERE id = :id');
+
+        $q->bindValue(':signaler', $comment->signaler());
+        $q->bindValue(':id', $comment->id(), \PDO::PARAM_INT);
+
+        $q->execute();
+    }
+
+    public function getReportList()
+    {
+        $q = $this->dao->prepare('SELECT id, billet, auteur, contenu, date, signaler FROM `P4 - comments` WHERE signaler = :signaler');
+        $q->bindValue(':signaler', (bool) true);
+        $q->execute();
+
+        $q->setFetchMode(\PDO::FETCH_CLASS | \PDO::FETCH_PROPS_LATE, '\Entity\Comment');
+
+        $comments = $q->fetchAll();
+
+        foreach ($comments as $comment)
+        {
+            $comment->setDate(new \DateTime($comment->date()));
+        }
+
+        return $comments;
+    }
+
+    public function count()
+    {
+        return $this->dao->query('SELECT COUNT(*) FROM `P4 - comments`')->fetchColumn();
+    }
+
+    public function countReported()
+    {
+        return $this->dao->query('SELECT COUNT(*) FROM `P4 - comments` WHERE signaler = true')->fetchColumn();
     }
 }

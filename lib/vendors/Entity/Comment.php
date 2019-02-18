@@ -15,7 +15,8 @@ class Comment extends Entity
     protected $billet,
         $auteur,
         $contenu,
-        $date;
+        $date,
+        $signaler;
 
     const AUTEUR_INVALIDE = 1;
     const CONTENU_INVALIDE = 2;
@@ -55,6 +56,11 @@ class Comment extends Entity
         $this->date = $date;
     }
 
+    public function setSignaler(bool $signaler)
+    {
+        $this->signaler = $signaler;
+    }
+
     public function billet()
     {
         return $this->billet;
@@ -73,5 +79,10 @@ class Comment extends Entity
     public function date()
     {
         return $this->date;
+    }
+
+    public function signaler()
+    {
+        return $this->signaler;
     }
 }

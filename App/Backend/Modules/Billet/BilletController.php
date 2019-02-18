@@ -18,7 +18,7 @@ class BilletController extends BackController
         $this->managers->getManagerOf('Billet')->delete($billetId);
         $this->managers->getManagerOf('Comments')->deleteFromBillet($billetId);
 
-        $this->app->user()->setFlash('La billet a bien été supprimée !');
+        $this->app->user()->setFlash('Le billet a bien été supprimée !');
 
         $this->app->httpResponse()->redirect('.');
     }
@@ -32,20 +32,13 @@ class BilletController extends BackController
         $this->app->httpResponse()->redirect('.');
     }
 
-    public function executeIndex(HTTPRequest $request)
-    {
-        $this->page->addVar('title', 'Gestion des billet');
-
-        $manager = $this->managers->getManagerOf('Billet');
-
-        $this->page->addVar('listeBillet', $manager->getList());
-        $this->page->addVar('nombreBillet', $manager->count());
-    }
-
     public function executeInsert(HTTPRequest $request)
     {
+
         $this->processForm($request);
 
+        $nombreBillets = $this->app->config()->get('nombre_billet');
+        $this->page->addVar('listeBillets', $this->managers->getManagerOf('Billet')->getList(0, $nombreBillets));
         $this->page->addVar('title', 'Ajout d\'un billet');
     }
 
@@ -54,11 +47,17 @@ class BilletController extends BackController
         $this->processForm($request);
 
         $this->page->addVar('title', 'Modification d\'un billet');
+
+        $nombreBillets = $this->app->config()->get('nombre_billet');
+        $this->page->addVar('listeBillets', $this->managers->getManagerOf('Billet')->getList(0, $nombreBillets));
     }
 
     public function executeUpdateComment(HTTPRequest $request)
     {
         $this->page->addVar('title', 'Modification d\'un commentaire');
+
+        $nombreBillets = $this->app->config()->get('nombre_billet');
+        $this->page->addVar('listeBillets', $this->managers->getManagerOf('Billet')->getList(0, $nombreBillets));
 
         if ($request->method() == 'POST')
         {
@@ -97,7 +96,8 @@ class BilletController extends BackController
             $billet = new Billet([
                 'auteur' => $request->postData('auteur'),
                 'titre' => $request->postData('titre'),
-                'contenu' => $request->postData('contenu')
+                'contenu' => $request->postData('contenu'),
+                'banniere' => $request->postData('banniere')
             ]);
 
             if ($request->getExists('id'))
@@ -127,7 +127,7 @@ class BilletController extends BackController
 
         if ($formHandler->process())
         {
-            $this->app->user()->setFlash($billet->isNew() ? 'La billet a bien été ajoutée !' : 'La billet a bien été modifiée !');
+            $this->app->user()->setFlash($billet->isNew() ? 'Le billet a bien été ajoutée !' : 'Le billet a bien été modifiée !');
 
             $this->app->httpResponse()->redirect('/admin/');
         }

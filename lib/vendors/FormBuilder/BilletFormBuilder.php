@@ -38,6 +38,15 @@ class BilletFormBuilder extends FormBuilder
                 'validators' => [
                     new NotNullValidator('Merci de spécifier le contenu du billet'),
                 ],
+            ]))
+            ->add(new StringField([
+                'label' => 'Bannière',
+                'name' => 'banniere',
+                'maxLength' => 200,
+                'validators' => [
+                    new MaxLengthValidator('L\'URL de bannière spécifié est trop long (200 caractères maximum)', 200),
+                    new NotNullValidator('Merci de spécifier l\'URL de la bannière du billet'),
+                ],
             ]));
     }
 }

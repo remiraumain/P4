@@ -71,4 +71,23 @@ abstract class CommentsManager extends Manager
      * @return Comment
      */
     abstract public function get($id);
+
+    /**
+     * Méthode permettant de signaler un commentaire.
+     * @param $comment Le commentaire à enregistrer
+     * @return void
+     */
+    abstract public function report(Comment $comment);
+
+    /**
+     * Méthode permettant de récupérer une liste de commentaires signalés.
+     * @return array
+     */
+    abstract public function getReportList();
+
+    /**
+     * Méthode renvoyant le nombre de commentaires total.
+     * @return int
+     */
+    abstract public function count();
 }

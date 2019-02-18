@@ -16,11 +16,13 @@ class Billet extends Entity
         $titre,
         $contenu,
         $dateAjout,
-        $dateModif;
+        $dateModif,
+        $banniere;
 
     const AUTEUR_INVALIDE = 1;
     const TITRE_INVALIDE = 2;
     const CONTENU_INVALIDE = 3;
+    const BANNIERE_INVALIDE = 4;
 
     public function isValid()
     {
@@ -70,6 +72,16 @@ class Billet extends Entity
         $this->dateModif = $dateModif;
     }
 
+    public function setBanniere($banniere)
+    {
+        if (!is_string($banniere) || empty($banniere))
+        {
+            $this->erreurs[] = self::BANNIERE_INVALIDE;
+        }
+
+        $this->banniere = $banniere;
+    }
+
     // GETTERS //
 
     public function auteur()
@@ -95,5 +107,10 @@ class Billet extends Entity
     public function dateModif()
     {
         return $this->dateModif;
+    }
+
+    public function banniere()
+    {
+        return $this->banniere;
     }
 }
