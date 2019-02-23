@@ -1,6 +1,7 @@
 <?php
 namespace App\Backend\Modules\Billet;
 
+use Entity\Image;
 use \OCFram\BackController;
 use \OCFram\HTTPRequest;
 use \Entity\Billet;
@@ -15,6 +16,10 @@ class BilletController extends BackController
     {
         $billetId = $request->getData('id');
 
+        $image = $this->managers->getManagerOf('Image')->getFrom($billetId);
+        unlink($image['location']);
+
+        $this->managers->getManagerOf('Image')->deleteFromBillet($billetId);
         $this->managers->getManagerOf('Billet')->delete($billetId);
         $this->managers->getManagerOf('Comments')->deleteFromBillet($billetId);
 
@@ -97,12 +102,19 @@ class BilletController extends BackController
                 'auteur' => $request->postData('auteur'),
                 'titre' => $request->postData('titre'),
                 'contenu' => $request->postData('contenu'),
-                'banniere' => $request->postData('banniere')
+                'banniere' => new Image([
+                    'file' => $request->postFile('banniere'),
+                ]),
             ]);
 
             if ($request->getExists('id'))
             {
                 $billet->setId($request->getData('id'));
+
+                $imageToDelete = $this->managers->getManagerOf('Image')->getFrom(strval($billet->id()));
+                unlink($imageToDelete->location());
+
+                $this->managers->getManagerOf('Image')->deleteFromBillet(strval($billet->id()));
             }
         }
         else
@@ -111,6 +123,7 @@ class BilletController extends BackController
             if ($request->getExists('id'))
             {
                 $billet = $this->managers->getManagerOf('Billet')->getUnique($request->getData('id'));
+                $billet->setBanniere($this->managers->getManagerOf('Image')->getFrom($billet['id']));
             }
             else
             {
@@ -127,11 +140,29 @@ class BilletController extends BackController
 
         if ($formHandler->process())
         {
+            $billet['banniere']->setBillet($billet->id());
+            $billet['banniere']->setLocation();
+            $imageManager = $this->managers->getManagerOf('Image');
+            $imageManager->save($billet['banniere']);
+
             $this->app->user()->setFlash($billet->isNew() ? 'Le billet a bien été ajoutée !' : 'Le billet a bien été modifiée !');
 
             $this->app->httpResponse()->redirect('/admin/');
         }
 
         $this->page->addVar('form', $form->createView());
+    }
+
+    public function executeValidateComment(HTTPRequest $request)
+    {
+        $comment = $this->managers->getManagerOf('Comments')->get($request->getData('id'));
+
+        $comment->setSignaler(0);
+
+        $this->managers->getManagerOf('Comments')->report($comment);
+
+        $this->app->user()->setFlash('Le commentaire a bien été validé !');
+
+        $this->app->httpResponse()->redirect('/admin/');
     }
 }

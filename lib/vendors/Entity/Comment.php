@@ -56,9 +56,9 @@ class Comment extends Entity
         $this->date = $date;
     }
 
-    public function setSignaler(bool $signaler)
+    public function setSignaler($signaler)
     {
-        $this->signaler = $signaler;
+        $this->signaler = (int) $signaler;
     }
 
     public function billet()

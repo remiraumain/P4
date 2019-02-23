@@ -31,7 +31,7 @@
     <?php
     foreach ($listeReportedComments as $comment)
     {
-    echo '<tr><td>', $comment['auteur'], '</td><td>', $comment['contenu'], '</td><td>le ', $comment['date']->format('d/m/Y à H\hi'), '</td><td><a href="/billet-',$comment['billet'],'.html">', $comment['billet'], '</a></td><td><a href="comment-update-', $comment['id'], '.html"><i class="fas fa-pen"></i></a> <a href="comment-delete-', $comment['id'], '.html"><i class="fas fa-times" ></i></a></td></tr>', "\n";
+    echo '<tr><td>', $comment['auteur'], '</td><td>', $comment['contenu'], '</td><td>le ', $comment['date']->format('d/m/Y à H\hi'), '</td><td><a href="/billet-',$comment['billet'],'.html">', $comment['billet'], '</a></td><td><a href="comment-update-', $comment['id'], '.html"><i class="fas fa-pen"></i></a> <a href="comment-delete-', $comment['id'], '.html"><i class="fas fa-times" ></i></a> <a href="/admin/comment-validate-', $comment['id'], '.html"><i class="fas fa-check"></i></a></td></tr>', "\n";
     }?>
     </table>
     </div>

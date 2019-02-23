@@ -17,10 +17,11 @@ class BilletController extends BackController
         // On ajoute une définition pour le titre.
         $this->page->addVar('title', 'Liste des '.$nombreBillets.' derniers billets');
 
-        // On récupère le manager des billets.
-        $manager = $this->managers->getManagerOf('Billet');
+        // On récupère le manager des billets et des images.
+        $billetManager = $this->managers->getManagerOf('Billet');
+        $imageManager = $this->managers->getManagerOf('Image');
 
-        $listeBillets = $manager->getList(0, $nombreBillets);
+        $listeBillets = $billetManager->getList(0, $nombreBillets);
 
         foreach ($listeBillets as $billet)
         {
@@ -35,6 +36,7 @@ class BilletController extends BackController
 
         // On ajoute la variable $listeBillets à la vue.
         $this->page->addVar('listeBillets', $listeBillets);
+        $this->page->addVar('imageManager', $imageManager);
     }
 
     public function executeShow(HTTPRequest $request)
@@ -95,7 +97,7 @@ class BilletController extends BackController
     {
         $comment = $this->managers->getManagerOf('Comments')->get($request->getData('id'));
 
-        $comment->setSignaler(true);
+        $comment->setSignaler(1);
 
         $this->managers->getManagerOf('Comments')->report($comment);
 
@@ -116,10 +118,11 @@ class BilletController extends BackController
         // On ajoute une définition pour le titre.
         $this->page->addVar('title', 'Liste de tous les billets');
 
-        // On récupère le manager des billets.
-        $manager = $this->managers->getManagerOf('Billet');
+        // On récupère le manager des billets et des images.
+        $billetManager = $this->managers->getManagerOf('Billet');
+        $imageManager = $this->managers->getManagerOf('Image');
 
-        $nombreBillets = $manager->count();
+        $nombreBillets = $billetManager->count();
         array_push($listeNombreBillets, $nombreBillets);
 
         $listesBillets = [];
@@ -127,7 +130,7 @@ class BilletController extends BackController
         foreach ($listeNombreBillets as $nombreBillets)
         {
 
-            $listeBillets = $manager->getList(0, $nombreBillets);
+            $listeBillets = $billetManager->getList(0, $nombreBillets);
 
             foreach ($listeBillets as $billet)
             {
@@ -142,9 +145,9 @@ class BilletController extends BackController
             array_push($listesBillets, $listeBillets);
         }
 
-
         // On ajoute la variable $listeBillets à la vue.
         $this->page->addVar('listeBillets', $listesBillets[0]);
         $this->page->addVar('allBillets', $listesBillets[1]);
+        $this->page->addVar('imageManager', $imageManager);
     }
 }

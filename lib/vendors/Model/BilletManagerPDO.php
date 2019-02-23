@@ -14,14 +14,15 @@ class BilletManagerPDO extends BilletManager
 {
     protected function add(Billet $billet)
     {
-        $requete = $this->dao->prepare('INSERT INTO `P4 - billets` SET auteur = :auteur, titre = :titre, contenu = :contenu, dateAjout = NOW(), dateModif = NOW(), banniere = :banniere');
+        $requete = $this->dao->prepare('INSERT INTO `P4 - billets` SET auteur = :auteur, titre = :titre, contenu = :contenu, dateAjout = NOW(), dateModif = NOW()');
 
         $requete->bindValue(':titre', $billet->titre());
         $requete->bindValue(':auteur', $billet->auteur());
         $requete->bindValue(':contenu', $billet->contenu());
-        $requete->bindValue(':banniere', $billet->banniere());
 
         $requete->execute();
+
+        $billet->setId($this->dao->lastInsertId());
     }
 
     public function count()
@@ -36,7 +37,7 @@ class BilletManagerPDO extends BilletManager
 
     public function getList($debut = -1, $limite = -1)
     {
-        $sql = 'SELECT id, auteur, titre, contenu, dateAjout, dateModif, banniere FROM `P4 - billets` ORDER BY id DESC';
+        $sql = 'SELECT id, auteur, titre, contenu, dateAjout, dateModif FROM `P4 - billets` ORDER BY id DESC';
 
         if ($debut != -1 || $limite != -1)
         {
@@ -61,7 +62,7 @@ class BilletManagerPDO extends BilletManager
 
     public function getUnique($id)
     {
-        $requete = $this->dao->prepare('SELECT id, auteur, titre, contenu, dateAjout, dateModif, banniere FROM `P4 - billets` WHERE id = :id');
+        $requete = $this->dao->prepare('SELECT id, auteur, titre, contenu, dateAjout, dateModif FROM `P4 - billets` WHERE id = :id');
         $requete->bindValue(':id', (int) $id, \PDO::PARAM_INT);
         $requete->execute();
 
@@ -80,12 +81,11 @@ class BilletManagerPDO extends BilletManager
 
     protected function modify(Billet $billet)
     {
-        $requete = $this->dao->prepare('UPDATE `P4 - billets` SET auteur = :auteur, titre = :titre, contenu = :contenu, dateModif = NOW(), banniere= :banniere WHERE id = :id');
+        $requete = $this->dao->prepare('UPDATE `P4 - billets` SET auteur = :auteur, titre = :titre, contenu = :contenu, dateModif = NOW() WHERE id = :id');
 
         $requete->bindValue(':titre', $billet->titre());
         $requete->bindValue(':auteur', $billet->auteur());
-        $requete->bindValue(':contenu', $billet->contenu());
-        $requete->bindValue(':banniere', $billet->banniere());
+        $requete->bindValue(':contenu', $billet->contenu());;
         $requete->bindValue(':id', $billet->id(), \PDO::PARAM_INT);
 
         $requete->execute();

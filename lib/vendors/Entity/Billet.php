@@ -74,7 +74,9 @@ class Billet extends Entity
 
     public function setBanniere($banniere)
     {
-        if (!is_string($banniere) || empty($banniere))
+        $fileError = $banniere['error'];
+
+        if (empty($banniere) || $fileError !== 0)
         {
             $this->erreurs[] = self::BANNIERE_INVALIDE;
         }
@@ -112,5 +114,10 @@ class Billet extends Entity
     public function banniere()
     {
         return $this->banniere;
+    }
+
+    public function bannierePath()
+    {
+        return $this->bannierePath;
     }
 }

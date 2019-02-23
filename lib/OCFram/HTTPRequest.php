@@ -40,6 +40,11 @@ class HTTPRequest extends ApplicationComponent
         return isset($_POST[$key]) ? $_POST[$key] : null;
     }
 
+    public function postFile($key)
+    {
+        return isset($_FILES[$key]) ? $_FILES[$key] : null;
+    }
+
     public function postExists($key)
     {
         return isset($_POST[$key]);

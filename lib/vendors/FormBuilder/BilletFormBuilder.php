@@ -1,7 +1,10 @@
 <?php
 namespace FormBuilder;
 
+use \OCFram\AllowedFileExtValidator;
+use \OCFram\FileField;
 use \OCFram\FormBuilder;
+use \OCFram\MaxSizeValidator;
 use \OCFram\StringField;
 use \OCFram\TextField;
 use \OCFram\MaxLengthValidator;
@@ -39,13 +42,14 @@ class BilletFormBuilder extends FormBuilder
                     new NotNullValidator('Merci de spécifier le contenu du billet'),
                 ],
             ]))
-            ->add(new StringField([
+            ->add(new FileField([
                 'label' => 'Bannière',
                 'name' => 'banniere',
-                'maxLength' => 200,
+                'maxSize' => 10000000,
                 'validators' => [
-                    new MaxLengthValidator('L\'URL de bannière spécifié est trop long (200 caractères maximum)', 200),
-                    new NotNullValidator('Merci de spécifier l\'URL de la bannière du billet'),
+                    new NotNullValidator('Merci de selectionner un fichier'),
+                    new AllowedFileExtValidator('L\'extension du fichier est incorrect'),
+                    new MaxSizeValidator('La taille du fichier n\'est pas respectée (10 Mo maximum)',10000000),
                 ],
             ]));
     }
