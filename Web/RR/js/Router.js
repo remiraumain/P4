@@ -35,20 +35,19 @@ var Router = {
 
     getMatch: function ()
     {
+        var index = false;
 
-        for (var i = 0; i < scripts.length; i++)
-        {
+        for (var i = 0; i < scripts.length; i++) {
             // look for the entry with a matching `path` value
-            if (scripts[i].path == this.path)
-            {
+            if (scripts[i].path == this.path) {
                 this.location = document.getElementsByTagName(scripts[i].location)[0];
                 this.scripts = scripts[i].script;
-            }
-            else
-            {
-                return false;
+
+                index = true;
             }
         }
+
+        return index;
     },
 
     loadScript: function ()
