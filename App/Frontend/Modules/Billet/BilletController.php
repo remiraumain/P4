@@ -9,7 +9,7 @@ use \OCFram\FormHandler;
 
 class BilletController extends BackController
 {
-    public function executeIndex(HTTPRequest $request)
+    public function executeIndex()
     {
         $nombreBillets = $this->app->config()->get('nombre_billet');
         $nombreCaracteres = $this->app->config()->get('nombre_caracteres');
@@ -106,7 +106,7 @@ class BilletController extends BackController
         $this->app->httpResponse()->redirect('/billet-'.$comment->billet().'.html');
     }
 
-    public function executeShowAll(HTTPRequest $request)
+    public function executeShowAll()
     {
         $listeNombreBillets = [];
 

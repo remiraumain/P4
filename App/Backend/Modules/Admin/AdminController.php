@@ -12,7 +12,7 @@ use \OCFram\BackController;
 use \OCFram\HTTPRequest;
 class AdminController extends \OCFram\BackController
 {
-    public function executeIndex(HTTPRequest $request)
+    public function executeIndex()
     {
         $nombreBillets = $this->app->config()->get('nombre_billet');
         $this->page->addVar('listeBillets', $this->managers->getManagerOf('Billet')->getList(0, $nombreBillets));

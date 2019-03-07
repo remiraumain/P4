@@ -27,7 +27,7 @@ class ConnexionController extends BackController
         }
     }
 
-    public function executeDisconnect(HTTPRequest $request)
+    public function executeDisconnect()
     {
         session_start();
 
