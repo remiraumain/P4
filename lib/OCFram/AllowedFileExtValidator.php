@@ -17,7 +17,7 @@ class AllowedFileExtValidator extends Validator
         $fileExtension = explode('.', $fileName);
         $fileActualExtension = strtolower(end($fileExtension));
 
-        $allowed = array('jpg', 'jpeg', 'png');
+        $allowed = array('jpg', 'jpeg', 'png', 'gif');
 
         if (!in_array($fileActualExtension, $allowed))
         {

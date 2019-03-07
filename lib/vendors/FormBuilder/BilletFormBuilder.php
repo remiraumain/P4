@@ -5,6 +5,7 @@ use \OCFram\AllowedFileExtValidator;
 use \OCFram\FileField;
 use \OCFram\FormBuilder;
 use \OCFram\MaxSizeValidator;
+use OCFram\NotNullFileValidator;
 use \OCFram\StringField;
 use \OCFram\TextField;
 use \OCFram\MaxLengthValidator;
@@ -45,9 +46,10 @@ class BilletFormBuilder extends FormBuilder
             ->add(new FileField([
                 'label' => 'Bannière',
                 'name' => 'banniere',
+                'accept' => 'image/*',
                 'maxSize' => 10000000,
                 'validators' => [
-                    new NotNullValidator('Merci de selectionner un fichier'),
+                    new NotNullFileValidator('Merci de selectionner un fichier'),
                     new AllowedFileExtValidator('L\'extension du fichier est incorrect'),
                     new MaxSizeValidator('La taille du fichier n\'est pas respectée (10 Mo maximum)',10000000),
                 ],

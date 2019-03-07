@@ -5,6 +5,7 @@ class TextField extends Field
 {
     protected $cols;
     protected $rows;
+    protected $id;
 
     public function buildWidget()
     {

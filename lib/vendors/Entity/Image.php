@@ -69,7 +69,7 @@ class Image extends Entity
     {
         if (!is_string($type) || empty($type))
         {
-            $this->erreurs[] = self::TITRE_INVALIDE;
+            $this->erreurs[] = self::TYPE_INVALIDE;
         }
 
         $this->type = $type;

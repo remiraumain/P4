@@ -8,11 +8,10 @@
 
 namespace OCFram;
 
-use Entity\Image;
-
 class FileField extends Field
 {
     protected $maxSize;
+    protected $accept;
 
     public function buildWidget()
     {
@@ -24,6 +23,11 @@ class FileField extends Field
         }
 
         $widget .= '<label>'.$this->label.'</label><input type="file" name="'.$this->name.'"';
+
+        if (!empty($this->accept))
+        {
+            $widget .= ' accept="'.$this->accept.'"';
+        }
 
         if (!empty($this->maxSize))
         {
@@ -45,6 +49,13 @@ class FileField extends Field
         {
             throw new \RuntimeException('La taille maximale doit être un nombre supérieur à 0');
         }
+    }
+
+    public function setAccept($value)
+    {
+        $accept = htmlspecialchars($value);
+
+        $this->accept = $accept;
     }
 
     public function setValue($value)
