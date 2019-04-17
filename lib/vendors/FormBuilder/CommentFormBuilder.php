@@ -1,11 +1,11 @@
 <?php
 namespace FormBuilder;
 
-use \OCFram\FormBuilder;
-use \OCFram\StringField;
-use \OCFram\TextField;
-use \OCFram\MaxLengthValidator;
-use \OCFram\NotNullValidator;
+use \Fram\FormBuilder;
+use \Fram\StringField;
+use \Fram\TextField;
+use \Fram\MaxLengthValidator;
+use \Fram\NotNullValidator;
 
 class CommentFormBuilder extends FormBuilder
 {

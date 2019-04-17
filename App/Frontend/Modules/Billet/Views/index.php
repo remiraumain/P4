@@ -1,9 +1,10 @@
 
 <div class="row">
 <?php
+if (!empty($listeBillets)) {
 $billet = current($listeBillets);
 $banniere = $imageManager->getFrom($billet['id']);
-    ?>
+?>
     <h2 class="z-depth-4 center-align">Mon dernier billet</h2>
     <div class="col l8 m6 offset-l2">
         <div class="card">
@@ -20,10 +21,22 @@ $banniere = $imageManager->getFrom($billet['id']);
             </div>
         </div>
     </div>
-
 </div>
 
-<p>Holy crap, Morty, run! Run for your life, Morty, run! I-I've never seen that thing before in my life, Morty, I don't even know what the hell it is! We-we gotta get out of here, Morty, it's gonna kill us! We're gonna die, Morty! We're gonna die! Go home and drink, grandpa. What, I'm gonna touch it, and you're gonna tell me it's an alien dick or something? Want to piss on him?
+<p>Projet Openclassrooms : </p>
+<ul>
+    <li>- Développer une application en PHP et avec une base de données MySQL</li>
+    <li>- Interface frontend (lecture des billets)</li>
+    <li>- Interface backend (administration des billets pour l'écriture)</li>
+    <li>- CRUD (Create/Read/Update/Delete)</li>
+    <li>- Ajout de commentaires, qui pourront être modérés dans l'interface d'administration</li>
+    <li>- Les lecteurs doivent pouvoir "signaler" les commentaires</li>
+    <li>- L'interface d'administration est protégée par mot de passe</li>
+    <li>- La rédaction de billets se fait dans une interface WYSIWYG basée sur TinyMCE</li>
+    <li>- Architecture MVC (Model/View/Controller)</li>
+</ul>
 
-Hi! I'm Mr Meeseeks! Look at me! Sometimes science is a lot more art, than science. A lot of people don't get that. Listen, Morty, I hate to break it to you but what people call "love" is just a chemical reaction that compels animals to breed. It hits hard, Morty, then it slowly fades, leaving you stranded in a failing marriage. I did it. Your parents are gonna do it. Break the cycle, Morty. Rise above. Focus on science. This is because you give Morty Smith bad grades, bitch!</p>
-
+<?php } else {?>
+    <h2>Oops</h2>
+    <p>Il n'y a aucun billet...</p>
+<?php }?>

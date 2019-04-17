@@ -85,7 +85,7 @@ class BilletManagerPDO extends BilletManager
 
         $requete->bindValue(':titre', $billet->titre());
         $requete->bindValue(':auteur', $billet->auteur());
-        $requete->bindValue(':contenu', $billet->contenu());;
+        $requete->bindValue(':contenu', $billet->contenu());
         $requete->bindValue(':id', $billet->id(), \PDO::PARAM_INT);
 
         $requete->execute();

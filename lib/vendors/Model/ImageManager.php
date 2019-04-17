@@ -9,7 +9,7 @@
 namespace Model;
 
 use Entity\Image;
-use \OCFram\Manager;
+use \Fram\Manager;
 
 abstract class ImageManager extends Manager
 {

@@ -1,8 +1,8 @@
 <?php
 namespace App\Backend\Modules\Connexion;
 
-use \OCFram\BackController;
-use \OCFram\HTTPRequest;
+use \Fram\BackController;
+use \Fram\HTTPRequest;
 
 class ConnexionController extends BackController
 {

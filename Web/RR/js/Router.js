@@ -2,6 +2,7 @@
 // Scripts that need to execute on all the app need to be set directly on the layout
 var scripts = [
     { "path": "/admin/billet-insert.html", "location": 'head', "script": [{ "async": false, "src": "https://cloud.tinymce.com/5/tinymce.min.js?apiKey=8pfy2ce1w2wznu2sl4peivm2990w6ck75m8ozvipust9m6kn" }, { "async": false, "src": "/tinymce/tinymceAddsOn.js" }] },
+    { "path": "/admin/billet-update-([0-9]+).html", "location": 'head', "script": [{ "async": false, "src": "https://cloud.tinymce.com/5/tinymce.min.js?apiKey=8pfy2ce1w2wznu2sl4peivm2990w6ck75m8ozvipust9m6kn" }, { "async": false, "src": "/tinymce/tinymceAddsOn.js" }] },
     { "path": "/billets.html", "location": 'body', "script": [{ "async": false, "src": "https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js" }, { "async": false, "src": "https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js" }, { "async": false, "src": "/masonry/js/masonryAddsOn.js" }] },
 ];
 
@@ -36,8 +37,14 @@ var Router = {
     getMatch: function ()
     {
         var index = false;
+        var reg = /(\d+)/;
+        var urlParameters = this.path.match(reg);
 
         for (var i = 0; i < scripts.length; i++) {
+            if (scripts[i].path.includes('([0-9]+)') && urlParameters != null)
+            {
+                scripts[i].path = scripts[i].path.replace('([0-9]+)', urlParameters[0]);
+            }
             // look for the entry with a matching `path` value
             if (scripts[i].path == this.path) {
                 this.location = document.getElementsByTagName(scripts[i].location)[0];

@@ -8,7 +8,7 @@
 
 namespace Model;
 
-use \OCFram\Manager;
+use \Fram\Manager;
 use \Entity\Billet;
 
 abstract class BilletManager extends Manager

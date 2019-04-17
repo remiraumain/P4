@@ -2,13 +2,13 @@
 namespace App\Backend\Modules\Billet;
 
 use Entity\Image;
-use \OCFram\BackController;
-use \OCFram\HTTPRequest;
+use \Fram\BackController;
+use \Fram\HTTPRequest;
 use \Entity\Billet;
 use \Entity\Comment;
 use \FormBuilder\CommentFormBuilder;
 use \FormBuilder\BilletFormBuilder;
-use \OCFram\FormHandler;
+use \Fram\FormHandler;
 
 class BilletController extends BackController
 {
@@ -112,8 +112,10 @@ class BilletController extends BackController
                 $billet->setId($request->getData('id'));
 
                 $imageToDelete = $this->managers->getManagerOf('Image')->getFrom(strval($billet->id()));
-                unlink($imageToDelete->location());
-
+                if ($imageToDelete)
+                {
+                    unlink($imageToDelete->location());
+                }
                 $this->managers->getManagerOf('Image')->deleteFromBillet(strval($billet->id()));
             }
         }

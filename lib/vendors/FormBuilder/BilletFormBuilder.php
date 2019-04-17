@@ -1,15 +1,15 @@
 <?php
 namespace FormBuilder;
 
-use \OCFram\AllowedFileExtValidator;
-use \OCFram\FileField;
-use \OCFram\FormBuilder;
-use \OCFram\MaxSizeValidator;
-use OCFram\NotNullFileValidator;
-use \OCFram\StringField;
-use \OCFram\TextField;
-use \OCFram\MaxLengthValidator;
-use \OCFram\NotNullValidator;
+use \Fram\AllowedFileExtValidator;
+use \Fram\FileField;
+use \Fram\FormBuilder;
+use \Fram\MaxSizeValidator;
+use Fram\NotNullFileValidator;
+use \Fram\StringField;
+use \Fram\TextField;
+use \Fram\MaxLengthValidator;
+use \Fram\NotNullValidator;
 
 class BilletFormBuilder extends FormBuilder
 {
@@ -18,9 +18,9 @@ class BilletFormBuilder extends FormBuilder
         $this->form->add(new StringField([
             'label' => 'Auteur',
             'name' => 'auteur',
-            'maxLength' => 20,
+            'maxLength' => 30,
             'validators' => [
-                new MaxLengthValidator('L\'auteur spécifié est trop long (20 caractères maximum)', 20),
+                new MaxLengthValidator('L\'auteur spécifié est trop long (30 caractères maximum)', 30),
                 new NotNullValidator('Merci de spécifier l\'auteur du billet'),
             ],
         ]))

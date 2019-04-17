@@ -8,9 +8,9 @@
 
 namespace App\Backend\Modules\Admin;
 
-use \OCFram\BackController;
-use \OCFram\HTTPRequest;
-class AdminController extends \OCFram\BackController
+use \Fram\BackController;
+use \Fram\HTTPRequest;
+class AdminController extends \Fram\BackController
 {
     public function executeIndex()
     {

@@ -8,7 +8,7 @@
 
 namespace Entity;
 
-use \OCFram\Entity;
+use \Fram\Entity;
 
 class Comment extends Entity
 {

@@ -20,8 +20,17 @@
         font-size: 1.5em !important;
     }
 
+    .card-panel-custom {
+        padding: 5px;
+    }
+
     .hide-custom {
         display: none;
+    }
+
+    .table-custom {
+        max-width: 90px;
+        word-wrap: break-word;
     }
 }
 
@@ -30,4 +39,20 @@
         margin: 0;
         width: 100%;
     }
+
+    .card-panel-custom {
+        padding: 0;
+    }
+}
+
+.font-custom {
+    margin: unset !important;
+    font-size: 46px;
+    background: linear-gradient(to top, white 0%, white 50%, #5f83bc 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform:uppercase;
+    font-weight: bold;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
