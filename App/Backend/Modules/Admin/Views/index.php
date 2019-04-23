@@ -10,7 +10,7 @@
         <?php
         foreach ($listeBilletsAdmin as $billet)
         {
-            echo '<tr><td class="table-custom">', $billet['auteur'], '</td><td>', $billet['titre'], '</td><td>le ', $billet['dateAjout']->format('d/m/Y à H\hi'), '</td><td class="hide-custom">', ($billet['dateAjout'] == $billet['dateModif'] ? '-' : 'le '.$billet['dateModif']->format('d/m/Y à H\hi')), '</td><td><a href="billet-update-', $billet['id'], '.html"><i class="fas fa-pen"></i></a> <a href="billet-delete-', $billet['id'], '.html"><i class="fas fa-times" ></i></a></td></tr>', "\n";
+            echo '<tr><td class="table-custom">', $billet['auteur'], '</td><td>', $billet['titre'], '</td><td>le ', $billet['dateAjout']->format('d/m/Y à H\hi'), '</td><td class="hide-custom">', ($billet['dateAjout'] == $billet['dateModif'] ? '-' : 'le '.$billet['dateModif']->format('d/m/Y à H\hi')), '</td><td><a href="/jeanforteroche/admin/billet-update-', $billet['id'], '.html"><i class="fas fa-pen"></i></a> <a href="/jeanforteroche/admin/billet-delete-', $billet['id'], '.html"><i class="fas fa-times" ></i></a></td></tr>', "\n";
         }
         ?>
     </table>
@@ -31,7 +31,7 @@
     <?php
     foreach ($listeReportedComments as $comment)
     {
-    echo '<tr><td class="table-custom">', $comment['auteur'], '</td><td>', $comment['contenu'], '</td><td class="hide-custom">le ', $comment['date']->format('d/m/Y à H\hi'), '</td><td><a href="/billet-',$comment['billet'],'.html">', $comment['billet'], '</a></td><td><a href="comment-update-', $comment['id'], '.html"><i class="fas fa-pen"></i></a> <a href="comment-delete-', $comment['id'], '.html"><i class="fas fa-times" ></i></a> <a href="/admin/comment-validate-', $comment['id'], '.html"><i class="fas fa-check"></i></a></td></tr>', "\n";
+    echo '<tr><td class="table-custom">', $comment['auteur'], '</td><td>', $comment['contenu'], '</td><td class="hide-custom">le ', $comment['date']->format('d/m/Y à H\hi'), '</td><td><a href="/jeanforteroche/billet-',$comment['billet'],'.html">', $comment['billet'], '</a></td><td><a href="/jeanforteroche/admin/comment-update-', $comment['id'], '.html"><i class="fas fa-pen"></i></a> <a href="/jeanforteroche/admin/comment-delete-', $comment['id'], '.html"><i class="fas fa-times" ></i></a> <a href="/jeanforteroche/admin/comment-validate-', $comment['id'], '.html"><i class="fas fa-check"></i></a></td></tr>', "\n";
     }?>
     </table>
     </div>

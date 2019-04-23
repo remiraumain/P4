@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <routes>
-    <route url="/admin/" module="Admin" action="index" />
-    <route url="/admin/billet-insert\.html" module="Billet" action="insert" />
-    <route url="/admin/billet-update-([0-9]+)\.html" module="Billet" action="update" vars="id" />
-    <route url="/admin/billet-delete-([0-9]+)\.html" module="Billet" action="delete" vars="id" />
-    <route url="/admin/comment-update-([0-9]+)\.html" module="Billet" action="updateComment" vars="id" />
-    <route url="/admin/comment-delete-([0-9]+)\.html" module="Billet" action="deleteComment" vars="id" />
-    <route url="/admin/comment-validate-([0-9]+)\.html" module="Billet" action="validateComment" vars="id" />
-    <route url="/admin/disconnect.html" module="Connexion" action="disconnect"/>
+  	<route url="/jeanforteroche/admin/" module="Admin" action="index" />
+    <route url="/jeanforteroche/admin/billet-insert\.html" module="Billet" action="insert" />
+    <route url="/jeanforteroche/admin/billet-update-([0-9]+)\.html" module="Billet" action="update" vars="id" />
+    <route url="/jeanforteroche/admin/billet-delete-([0-9]+)\.html" module="Billet" action="delete" vars="id" />
+    <route url="/jeanforteroche/admin/comment-update-([0-9]+)\.html" module="Billet" action="updateComment" vars="id" />
+    <route url="/jeanforteroche/admin/comment-delete-([0-9]+)\.html" module="Billet" action="deleteComment" vars="id" />
+    <route url="/jeanforteroche/admin/comment-validate-([0-9]+)\.html" module="Billet" action="validateComment" vars="id" />
+    <route url="/jeanforteroche/admin/disconnect.html" module="Connexion" action="disconnect"/>
 </routes>

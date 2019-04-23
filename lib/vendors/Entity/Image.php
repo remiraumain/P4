@@ -105,10 +105,10 @@ class Image extends Entity
 
 
         $fileNameNew = uniqid('', true) . "." . $fileActualExtension;
-        $fileDestination = 'uploads/' . $fileNameNew;
+        $fileDestination = __DIR__.'/../../../Web/uploads/' . $fileNameNew;
         move_uploaded_file($fileTmpName, $fileDestination);
 
-        $this->location = $fileDestination;
+        $this->location = '/jeanforteroche/Web/uploads/'.$fileNameNew;
     }
 
     // GETTERS //

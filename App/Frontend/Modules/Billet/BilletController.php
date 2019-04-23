@@ -82,7 +82,7 @@ class BilletController extends BackController
         {
             $this->app->user()->setFlash('Le commentaire a bien été ajouté, merci !');
 
-            $this->app->httpResponse()->redirect('billet-'.$request->getData('billet').'.html');
+            $this->app->httpResponse()->redirect('/jeanforteroche/billet-'.$request->getData('billet').'.html');
         }
 
         $nombreBillets = $this->app->config()->get('nombre_billet');
@@ -103,7 +103,7 @@ class BilletController extends BackController
 
         $this->app->user()->setFlash('Le commentaire a bien été signalé !');
 
-        $this->app->httpResponse()->redirect('/billet-'.$comment->billet().'.html');
+        $this->app->httpResponse()->redirect('/jeanforteroche/billet-'.$comment->billet().'.html');
     }
 
     public function executeShowAll()

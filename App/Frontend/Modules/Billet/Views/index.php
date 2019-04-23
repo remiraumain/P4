@@ -17,7 +17,7 @@ $banniere = $imageManager->getFrom($billet['id']);
             <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4"><?= $billet['titre'] ?><i class="material-icons right">close</i></span>
                 <p><?= $billet['contenu'] ?></p>
-                <p><a class="waves-effect waves-light btn" href="/billet-<?= $billet['id'] ?>.html">Lire</a></p>
+                <p><a class="waves-effect waves-light btn" href="/jeanforteroche/billet-<?= $billet['id'] ?>.html">Lire</a></p>
             </div>
         </div>
     </div>

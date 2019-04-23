@@ -1,7 +1,7 @@
 tinymce.init({
     selector: '#mytextarea',
     language: 'fr_FR',
-    language_url : '/tinymce/langs/fr_FR.js',
+    language_url : '/jeanforteroche/Web/tinymce/langs/fr_FR.js',
     height : '780px',
     menubar: false,
     plugins: "lists emoticons",

@@ -2,59 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f29228db-843e-46d5-a704-2926879533e9" name="Default Changelist" comment="- added language fr for tinymce">
-      <change beforePath="$PROJECT_DIR$/App/Backend/BackendApplication.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Backend/BackendApplication.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Backend/Modules/Admin/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Backend/Modules/Admin/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Backend/Config/routes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/App/Backend/Config/routes.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Backend/Modules/Admin/Views/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Backend/Modules/Admin/Views/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Backend/Modules/Billet/BilletController.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Backend/Modules/Billet/BilletController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Backend/Modules/Connexion/ConnexionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Backend/Modules/Connexion/ConnexionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Frontend/FrontendApplication.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Frontend/FrontendApplication.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Frontend/Config/routes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/App/Frontend/Config/routes.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Frontend/Modules/Billet/BilletController.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Frontend/Modules/Billet/BilletController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Frontend/Modules/Billet/Views/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Frontend/Modules/Billet/Views/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Frontend/Modules/Billet/Views/show.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Frontend/Modules/Billet/Views/show.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Frontend/Modules/Billet/Views/showAll.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Frontend/Modules/Billet/Views/showAll.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Frontend/Templates/layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Frontend/Templates/layout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/.htaccess" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/RR/js/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/Web/RR/js/Router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/Web/bootstrap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/images/abstract-architecture-building-207153.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/images/morty.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/images/rick-et-morty.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/materialize/css/materializeAddsOn.css" beforeDir="false" afterPath="$PROJECT_DIR$/Web/materialize/css/materializeAddsOn.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/OCFram/AllowedFileExtValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Fram/AllowedFileExtValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/OCFram/Application.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Fram/Application.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/OCFram/ApplicationComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Fram/ApplicationComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/OCFram/BackController.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Fram/BackController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/OCFram/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Fram/Config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/OCFram/Entity.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Fram/Entity.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/OCFram/Field.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Fram/Field.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/OCFram/FileField.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Fram/FileField.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/OCFram/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Fram/Form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/OCFram/FormBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Fram/FormBuilder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/OCFram/FormHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Fram/FormHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/OCFram/HTTPRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Fram/HTTPRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/OCFram/HTTPResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Fram/HTTPResponse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/OCFram/Hydrator.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Fram/Hydrator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/OCFram/Manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Fram/Manager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/OCFram/Managers.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Fram/Managers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/OCFram/MaxLengthValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Fram/MaxLengthValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/OCFram/MaxSizeValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Fram/MaxSizeValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/OCFram/NotNullFileValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Fram/NotNullFileValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/OCFram/NotNullValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Fram/NotNullValidator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/OCFram/PDOFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Fram/PDOFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/OCFram/Page.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Fram/Page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/OCFram/Route.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Fram/Route.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/OCFram/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Fram/Router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/OCFram/SplClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Fram/SplClassLoader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/OCFram/StringField.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Fram/StringField.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/OCFram/TextField.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Fram/TextField.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/OCFram/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Fram/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/OCFram/Validator.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Fram/Validator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/vendors/Entity/Billet.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/vendors/Entity/Billet.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/vendors/Entity/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/vendors/Entity/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bootstrap.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/tinymce/tinymceAddsOn.js" beforeDir="false" afterPath="$PROJECT_DIR$/Web/tinymce/tinymceAddsOn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Fram/PDOFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Fram/PDOFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/vendors/Entity/Image.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/vendors/Entity/Image.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/vendors/FormBuilder/BilletFormBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/vendors/FormBuilder/BilletFormBuilder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/vendors/FormBuilder/CommentFormBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/vendors/FormBuilder/CommentFormBuilder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/vendors/Model/BilletManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/vendors/Model/BilletManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/vendors/Model/BilletManagerPDO.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/vendors/Model/BilletManagerPDO.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/vendors/Model/CommentsManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/vendors/Model/CommentsManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/vendors/Model/ImageManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/vendors/Model/ImageManager.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,28 +47,44 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Frontend/Modules/Billet/Views/showAll.php">
+        <entry file="file://$PROJECT_DIR$/App/Backend/Modules/Billet/BilletController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
+            <state relative-caret-position="1756">
+              <caret line="167" column="47" selection-start-line="167" selection-start-column="47" selection-end-line="167" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Web/materialize/css/materializeAddsOn.css">
+        <entry file="file://$PROJECT_DIR$/Web/tinymce/tinymceAddsOn.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+            <state relative-caret-position="45">
+              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/App/Frontend/Modules/Billet/Views/index.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Frontend/Config/routes.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+            <state relative-caret-position="90">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Frontend/Templates/layout.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="81" column="63" selection-start-line="81" selection-start-column="63" selection-end-line="81" selection-end-column="63" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,50 +92,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Frontend/Modules/Billet/BilletController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+            <state relative-caret-position="-1096">
+              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Web/RR/js/Router.js">
+        <entry file="file://$PROJECT_DIR$/App/Backend/Modules/Admin/AdminController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="43" column="77" selection-start-line="43" selection-start-column="77" selection-end-line="43" selection-end-column="77" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/App/Backend/Config/routes.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/vendors/FormBuilder/BilletFormBuilder.php">
+        <entry file="file://$USER_HOME$/Symfony/Horizon_v2/bin/console">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="22" column="100" selection-start-line="22" selection-start-column="100" selection-end-line="22" selection-end-column="100" />
-              <folding>
-                <element signature="e#30#66#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/vendors/Entity/Billet.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/vendors/Model/BilletManagerPDO.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-72">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="75">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -164,6 +130,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
               <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Backend/Modules/Connexion/ConnexionController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="37" column="49" selection-start-line="37" selection-start-column="49" selection-end-line="37" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -180,10 +155,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>htmlspecialchars</find>
-      <find>bann</find>
-      <find>StringField</find>
-      <find>$maxLength</find>
       <find>La taille maximale</find>
       <find>setB</find>
       <find>value</find>
@@ -205,11 +176,15 @@
       <find>image</find>
       <find>fileFie</find>
       <find>$_File</find>
-      <find>root</find>
       <find>utf8</find>
       <find>404.html</find>
       <find>30</find>
+      <find>c</find>
+      <find>/P4/Web</find>
       <find>OCFram</find>
+      <find>P4</find>
+      <find>root</find>
+      <find>déc</find>
     </findStrings>
     <replaceStrings>
       <replace>OCFram</replace>
@@ -223,6 +198,7 @@
       <replace>nombreBillets</replace>
       <replace>F</replace>
       <replace>Fram</replace>
+      <replace>jeanforteroche</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/lib/RRFram</dir>
@@ -264,10 +240,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Web/materialize/vendors/js.js" />
-        <option value="$PROJECT_DIR$/Web/materialize/js/materialize.js" />
-        <option value="$PROJECT_DIR$/Web/materialize/vendors/materializeAddsOn.js" />
-        <option value="$PROJECT_DIR$/App/Frontend/Config/routes.xml" />
         <option value="$PROJECT_DIR$/Web/waterfall/responsive_waterfall.js" />
         <option value="$PROJECT_DIR$/Web/waterfall/wf-style.css" />
         <option value="$PROJECT_DIR$/App/Backend/Config/app.xml" />
@@ -283,38 +255,42 @@
         <option value="$PROJECT_DIR$/lib/vendors/Model/ImageManagerPDO.php" />
         <option value="$PROJECT_DIR$/lib/OCFram/Form.php" />
         <option value="$PROJECT_DIR$/Web/masonry/js/masonryAddsOn.js" />
-        <option value="$PROJECT_DIR$/App/Backend/Config/routes.xml" />
         <option value="$PROJECT_DIR$/lib/vendors/Model/CommentsManagerPDO.php" />
         <option value="$PROJECT_DIR$/lib/vendors/Model/CommentsManager.php" />
         <option value="$PROJECT_DIR$/lib/vendors/Entity/Comment.php" />
-        <option value="$PROJECT_DIR$/lib/vendors/Entity/Image.php" />
         <option value="$PROJECT_DIR$/lib/OCFram/TextField.php" />
         <option value="$PROJECT_DIR$/lib/OCFram/FileField.php" />
         <option value="$PROJECT_DIR$/lib/OCFram/AllowedFileExtValidator.php" />
         <option value="$USER_HOME$/Downloads/langs/fr_FR.js" />
         <option value="$PROJECT_DIR$/lib/OCFram/PDOFactory.php" />
-        <option value="$PROJECT_DIR$/Web/tinymce/tinymceAddsOn.js" />
         <option value="$PROJECT_DIR$/lib/OCFram/NotNullFileValidator.php" />
         <option value="$PROJECT_DIR$/App/Backend/Modules/Admin/AdminController.php" />
-        <option value="$PROJECT_DIR$/App/Backend/Modules/Connexion/ConnexionController.php" />
-        <option value="$PROJECT_DIR$/App/Frontend/Modules/Billet/BilletController.php" />
         <option value="$PROJECT_DIR$/lib/OCFram/Entity.php" />
         <option value="$PROJECT_DIR$/lib/OCFram/Page.php" />
-        <option value="$PROJECT_DIR$/App/Frontend/Templates/layout.php" />
         <option value="$PROJECT_DIR$/App/Frontend/FrontendApplication.php" />
         <option value="$PROJECT_DIR$/lib/OCFram/HTTPResponse.php" />
         <option value="$PROJECT_DIR$/App/Backend/BackendApplication.php" />
         <option value="$PROJECT_DIR$/Web/.htaccess" />
         <option value="$PROJECT_DIR$/App/Frontend/Modules/Billet/Views/showAll.php" />
-        <option value="$PROJECT_DIR$/Web/RR/js/Router.js" />
-        <option value="$PROJECT_DIR$/App/Backend/Modules/Billet/BilletController.php" />
-        <option value="$PROJECT_DIR$/lib/vendors/FormBuilder/BilletFormBuilder.php" />
         <option value="$PROJECT_DIR$/App/Backend/Modules/Admin/Views/index.php" />
         <option value="$PROJECT_DIR$/Web/materialize/css/materializeAddsOn.css" />
         <option value="$PROJECT_DIR$/App/Frontend/Modules/Billet/Views/index.php" />
         <option value="$PROJECT_DIR$/lib/Fram/Entity.php" />
         <option value="$PROJECT_DIR$/lib/vendors/Entity/Billet.php" />
         <option value="$PROJECT_DIR$/lib/vendors/Model/BilletManagerPDO.php" />
+        <option value="$PROJECT_DIR$/lib/Fram/Router.php" />
+        <option value="$PROJECT_DIR$/lib/Fram/Application.php" />
+        <option value="$PROJECT_DIR$/App/Backend/Config/routes.xml" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/lib/vendors/FormBuilder/BilletFormBuilder.php" />
+        <option value="$PROJECT_DIR$/App/Frontend/Templates/layout.php" />
+        <option value="$PROJECT_DIR$/Web/RR/js/Router.js" />
+        <option value="$PROJECT_DIR$/lib/vendors/Entity/Image.php" />
+        <option value="$PROJECT_DIR$/App/Frontend/Modules/Billet/BilletController.php" />
+        <option value="$PROJECT_DIR$/App/Frontend/Config/routes.xml" />
+        <option value="$PROJECT_DIR$/App/Backend/Modules/Connexion/ConnexionController.php" />
+        <option value="$PROJECT_DIR$/App/Backend/Modules/Billet/BilletController.php" />
+        <option value="$PROJECT_DIR$/Web/tinymce/tinymceAddsOn.js" />
       </list>
     </option>
   </component>
@@ -324,7 +300,6 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
     <servers>
       <server host="localhost" id="447e4ef0-78fe-41a1-916b-2f933e16563e" name="localhost" />
@@ -413,6 +388,14 @@
               <item name="P4" type="462c0819:PsiDirectoryNode" />
               <item name="App" type="462c0819:PsiDirectoryNode" />
               <item name="Backend" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Connexion" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="P4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="P4" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="Backend" type="462c0819:PsiDirectoryNode" />
               <item name="Templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -420,6 +403,13 @@
               <item name="P4" type="462c0819:PsiDirectoryNode" />
               <item name="App" type="462c0819:PsiDirectoryNode" />
               <item name="Frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="P4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="P4" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="Config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="P4" type="b2602c69:ProjectViewProjectNode" />
@@ -448,7 +438,40 @@
             <path>
               <item name="P4" type="b2602c69:ProjectViewProjectNode" />
               <item name="P4" type="462c0819:PsiDirectoryNode" />
-              <item name="Errors" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="Templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="P4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="P4" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="P4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="P4" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="Fram" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="P4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="P4" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="vendors" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="P4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="P4" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="vendors" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="P4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="P4" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="vendors" type="462c0819:PsiDirectoryNode" />
+              <item name="FormBuilder" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="P4" type="b2602c69:ProjectViewProjectNode" />
@@ -481,6 +504,18 @@
               <item name="RR" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="P4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="P4" type="462c0819:PsiDirectoryNode" />
+              <item name="Web" type="462c0819:PsiDirectoryNode" />
+              <item name="tinymce" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="P4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="P4" type="462c0819:PsiDirectoryNode" />
+              <item name="Web" type="462c0819:PsiDirectoryNode" />
+              <item name="uploads" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -490,6 +525,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="Constants" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -502,19 +538,19 @@
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Web/tinymce/langs" />
-      <recent name="$PROJECT_DIR$/Web/tinymce" />
-      <recent name="$PROJECT_DIR$/Web/materialize/js" />
-      <recent name="$PROJECT_DIR$/Web/images" />
-      <recent name="$PROJECT_DIR$/App/Backend/Modules/Admin/Views" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Web/tinymce/langs" />
       <recent name="$PROJECT_DIR$/Web" />
       <recent name="$PROJECT_DIR$/Web/materialize/js" />
       <recent name="$PROJECT_DIR$/Web/bootstrap" />
       <recent name="$PROJECT_DIR$/App" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Web/tinymce/langs" />
+      <recent name="$PROJECT_DIR$/Web/tinymce" />
+      <recent name="$PROJECT_DIR$/Web/materialize/js" />
+      <recent name="$PROJECT_DIR$/Web/images" />
+      <recent name="$PROJECT_DIR$/App/Backend/Modules/Admin/Views" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -568,7 +604,7 @@
       <workItem from="1553461749920" duration="1135000" />
       <workItem from="1555317910543" duration="4461000" />
       <workItem from="1555347437928" duration="3422000" />
-      <workItem from="1555490836592" duration="10420000" />
+      <workItem from="1555490836592" duration="19898000" />
     </task>
     <task id="LOCAL-00001" summary="Upload to Github : &#10;- all basic files to begin&#10;- css materialize&#10;- MVC structure&#10;- Frontend &amp; Backend complete">
       <created>1549563080091</created>
@@ -637,7 +673,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="260408000" />
+    <option name="totallyTimeSpent" value="269886000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -650,23 +686,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="713" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.490099" visible="true" weight="0.29159936" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.490099" visible="true" weight="0.29159936" />
       <window_info id="Structure" order="1" sideWeight="0.509901" side_tool="true" weight="0.2552504" />
       <window_info id="Favorites" order="2" sideWeight="0.50626564" side_tool="true" weight="0.25121164" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49919224" weight="0.3252818" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" weight="0.32440946" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49596122" weight="0.3558776" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49676898" weight="0.3558776" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32643312" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49919224" weight="0.32643312" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49919224" weight="0.3268921" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50080776" side_tool="true" weight="0.32744783" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49919224" visible="true" weight="0.3268921" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.503231" side_tool="true" weight="0.3558776" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="12" weight="0.32755905" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.329653" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -759,8 +794,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/App/Frontend/Modules/Billet/Views/index.php</url>
-          <line>18</line>
-          <option name="timeStamp" value="506" />
+          <line>11</line>
+          <option name="timeStamp" value="534" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/lib/vendors/Entity/Image.php</url>
+          <line>110</line>
+          <option name="timeStamp" value="538" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/lib/vendors/Entity/Image.php</url>
+          <line>108</line>
+          <option name="timeStamp" value="539" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -775,41 +820,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/Fram/PDOFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="15" column="69" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Fram/FormHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Fram/HTTPRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="e#6#93#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/Fram/Form.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/vendors/Entity/Image.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="142" selection-start-line="142" selection-end-line="142" />
         </state>
       </provider>
     </entry>
@@ -848,47 +862,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Fram/Route.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="31" column="4" lean-forward="true" selection-start-line="31" selection-start-column="4" selection-end-line="41" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web/tinymce/tinymceAddsOn.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Backend/Modules/Connexion/ConnexionController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Symfony/Horizon/composer-setup.php" />
     <entry file="file://$USER_HOME$/Symfony/demo/bin/console" />
-    <entry file="file://$PROJECT_DIR$/App/Backend/Modules/Admin/AdminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Symfony/Horizon/bin/console">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Fram/Application.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
         </state>
       </provider>
     </entry>
@@ -899,39 +878,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Frontend/Config/routes.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Errors/404.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Frontend/Templates/layout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Backend/BackendApplication.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Fram/SplClassLoader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="6" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
-          <folding>
-            <element signature="e#6#987#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Backend/Config/app.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -944,34 +892,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Fram/Router.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web/bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Frontend/FrontendApplication.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Fram/BackController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-33">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>
@@ -988,9 +908,6 @@
           <caret line="43" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Backend/Templates/layout.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Web/materialize/js/materializeAddsOn.js">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1009,37 +926,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Backend/Config/routes.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="45" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web/RR/js/Router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="43" column="77" selection-start-line="43" selection-start-column="77" selection-end-line="43" selection-end-column="77" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/vendors/FormBuilder/CommentFormBuilder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/vendors/FormBuilder/BilletFormBuilder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="22" column="100" selection-start-line="22" selection-start-column="100" selection-end-line="22" selection-end-column="100" />
-          <folding>
-            <element signature="e#30#66#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1053,13 +943,6 @@
     <entry file="file://$PROJECT_DIR$/App/Backend/Modules/Billet/Views/insert.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Backend/Modules/Admin/Views/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Web/materialize/css/materializeAddsOn.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="453">
@@ -1067,27 +950,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Backend/Modules/Billet/BilletController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="44" column="68" lean-forward="true" selection-start-line="44" selection-start-column="68" selection-end-line="44" selection-end-column="68" />
-          <folding>
-            <element signature="e#45#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/Frontend/Modules/Billet/Views/showAll.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Frontend/Modules/Billet/BilletController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1101,7 +967,7 @@
     <entry file="file://$PROJECT_DIR$/lib/vendors/Entity/Billet.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1112,10 +978,197 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Web/bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Backend/Templates/layout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="30" selection-start-column="30" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Fram/HTTPRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="e#6#93#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Backend/BackendApplication.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Fram/BackController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/vendors/FormBuilder/BilletFormBuilder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="21" />
+          <folding>
+            <element signature="e#30#64#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Fram/SplClassLoader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+          <folding>
+            <element signature="e#6#987#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Frontend/FrontendApplication.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Fram/Application.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Fram/Router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Fram/Route.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="29" column="63" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/App/Frontend/Modules/Billet/Views/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+        <state relative-caret-position="164">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/vendors/Entity/Image.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="99" column="32" lean-forward="true" selection-start-line="99" selection-start-column="32" selection-end-line="99" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/RR/js/Router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Frontend/Templates/layout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="81" column="63" selection-start-line="81" selection-start-column="63" selection-end-line="81" selection-end-column="63" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Backend/Modules/Admin/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Frontend/Modules/Billet/BilletController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1096">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Frontend/Config/routes.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Backend/Modules/Connexion/ConnexionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="37" column="49" selection-start-line="37" selection-start-column="49" selection-end-line="37" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Backend/Modules/Billet/BilletController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1756">
+          <caret line="167" column="47" selection-start-line="167" selection-start-column="47" selection-end-line="167" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/tinymce/tinymceAddsOn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Symfony/Horizon_v2/bin/console">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Backend/Modules/Admin/Views/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Backend/Config/routes.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
         </state>
       </provider>
     </entry>

@@ -88,7 +88,7 @@ class BilletController extends BackController
         {
             $this->app->user()->setFlash('Le commentaire a bien été modifié');
 
-            $this->app->httpResponse()->redirect('/admin/');
+            $this->app->httpResponse()->redirect('/jeanforteroche/admin/');
         }
 
         $this->page->addVar('form', $form->createView());
@@ -149,7 +149,7 @@ class BilletController extends BackController
 
             $this->app->user()->setFlash($billet->isNew() ? 'Le billet a bien été ajoutée !' : 'Le billet a bien été modifiée !');
 
-            $this->app->httpResponse()->redirect('/admin/');
+            $this->app->httpResponse()->redirect('/jeanforteroche/admin/');
         }
 
         $this->page->addVar('form', $form->createView());
@@ -165,6 +165,6 @@ class BilletController extends BackController
 
         $this->app->user()->setFlash('Le commentaire a bien été validé !');
 
-        $this->app->httpResponse()->redirect('/admin/');
+        $this->app->httpResponse()->redirect('/jeanforteroche/admin/');
     }
 }
